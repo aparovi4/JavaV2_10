@@ -5,6 +5,16 @@ public class RadioTest {
 
     @Test
 
+    public void setRadioStation() {
+        Radio radio = new Radio(30);
+        radio.setCurrentRadioStation(29);
+        int expected = 29;
+        int actual = radio.getCurrentRadioStation();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+
     public void setRadioStationAboveMax() {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(10);
