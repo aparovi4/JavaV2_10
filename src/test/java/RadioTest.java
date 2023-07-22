@@ -33,7 +33,7 @@ public class RadioTest {
     }
 
     @Test
-    public void setNextRadioStationNumbeAfter9() {
+    public void setNextRadioStationNumberAfter9() {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(9);
         radio.nextRadioStation();
